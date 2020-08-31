@@ -1,0 +1,162 @@
+body{
+  margin:0;
+  line-height: 1.6;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+img{
+  width:100%;
+  display: block;
+  height:auto;
+
+}
+h1,h2,h3,p{
+  margin:0;
+}
+
+.container{
+  width:85%;
+  margin:0 auto;
+  max-width:65em;
+}
+
+.btn{
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  padding:0.5em 1.25em;
+  font-size:1.25em;
+  background: var(--clr-accent,blue) ;
+  color:white;
+  text-transform:uppercase;
+  border-radius:.25em;
+  transition:
+    transform 250ms ease-in-out,
+    opacity 250ms clear;
+
+}
+.btn:hover,
+.btn:focus{
+  transform: scale(1.1);
+  opacity: .5;
+}
+
+.split{
+  display: flex;
+  justify-content: center;
+  min-width:15em;
+  flex-basis:20%;
+  margin-bottom:5em;
+}
+
+.primary-title{
+  font-size: 4rem;
+  line-height:1;
+  text-transform: uppercase;
+}
+
+.spacing>*+* {
+  margin-top: 2rem;
+}
+
+.section{
+  padding: 7em 0;
+}
+.section-title{
+  text-align: center;
+  font-size: 2.5rem;
+  line-height:3;
+  color:#17353d;
+  margin-bottom: 3em;
+
+
+}
+.hero{
+  text-align:center;
+  color:white;
+  padding:15em 0;
+  background-image:
+    url(../images/shoe-3.png),
+    radial-gradient(#444,#111);
+
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.featured{
+  background-color: #eee;
+}
+
+
+.featured_item
+{
+  display:block;
+  position: relative;
+  transition: scale(.85);
+  transform: 250ms ease-in-out;
+  border:1px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.featured_item:hover,
+.featured_item:focus{
+  transform: scale(1);
+}
+
+span{
+  display :block;
+  font-weight: 700;
+  font-size:3rem;
+  line-height: 2.5rem;
+}
+.featured_details{
+
+}
+
+.product{
+  background: radial-gradient(var(--clr-inner,limegreen),var(--clr-upper,yellow));
+  padding: 3em 2em;
+  margin-bottom:5em;
+  border-radius: 1em;
+  text-align: center;
+}
+
+.product-image{
+  margin:-5em 0 0 0 ;
+  float:right;
+  width:65%;
+  text-align: left;
+  shape-outside: url(../images/shoe-1.png);
+  shape-margin: 1em;
+}
+
+
+.product_title{
+  font-size:4em;
+  color:#fff;
+  text-shadow:0 0 .2;
+  line-height:1.1em
+
+}
+
+.hero{
+  --clr-accent:#faa700;
+}
+.shoe-red{
+  --clr-inner:#faa700;
+  --clr-upper:#e48d00;
+  --clr-accent:#a1173c;
+}
+.shoe-white{
+  --clr-inner:#fce4b3;
+  --clr-upper:#eac886;
+  --clr-accent:#2f4858;
+}
+.shoe-blue{
+  --clr-inner:#6dd5ed;
+  --clr-upper:#2193b0;
+  --clr-accent:#008951;
+}
